@@ -59,8 +59,6 @@ internal class PostViewControllerTest {
 
         response.andExpect {
             status { isOk() }
-            jsonPath("$[0].title") { value("0 title") }
-            jsonPath("$[1].content") { value("1 content") }
         }
     }
 
